@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Exercise1_4 {
+    public static void main(String[] args) {
+	   Scanner sc = new Scanner(System.in);
+	   int n=sc.nextInt();
+           int result=0;
+           int original = n;
+while(n>0){
+  int rem = n%10;
+  result +=rem*rem*rem;
+  n /=10;
+}
+if(original == result)
+  System.out.println("1");
+else
+  System.out.println("0");
+  }
+  }
